@@ -46,6 +46,7 @@ object BridgeContract {
     const val BRIDGE_LOG = "log"
     const val BRIDGE_LIFECYCLE = "lifecycle"
     const val BRIDGE_CRYPTO_RESULT = "crypto_result"
+    const val BRIDGE_DIAGNOSTICS = "diagnostics"
 
     val ALL_BRIDGE_MESSAGE_TYPES = listOf(
         BRIDGE_JS_ERROR,
@@ -53,6 +54,7 @@ object BridgeContract {
         BRIDGE_LOG,
         BRIDGE_LIFECYCLE,
         BRIDGE_CRYPTO_RESULT,
+        BRIDGE_DIAGNOSTICS,
     )
 
     // ── Worker Command Types (main → worker) ─────────────────────────────
@@ -89,6 +91,7 @@ object BridgeContract {
     const val WORKER_RES_DB_LIST_RESULT = "db_list_result"
     const val WORKER_RES_ERROR = "error"
     const val WORKER_RES_LOG = "log"
+    const val WORKER_RES_DIAGNOSTICS = "diagnostics"
 
     val ALL_WORKER_RESULT_TYPES = listOf(
         WORKER_RES_READY,
@@ -101,5 +104,6 @@ object BridgeContract {
         WORKER_RES_DB_LIST_RESULT,
         WORKER_RES_ERROR,
         WORKER_RES_LOG,
+        WORKER_RES_DIAGNOSTICS,
     )
 }
